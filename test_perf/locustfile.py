@@ -39,6 +39,6 @@ def inject_errors(path):
     else:
         is_srv_error = "1"
 
-    withSleep = f"{path}&db_sleep={db_sleep}&srv_sleep={srv_sleep}"
-    withErrors = f"{withSleep}&is_db_error={is_db_error}&is_srv_error={is_srv_error}"
-    return withErrors
+    with_sleep = f"{path}&db_sleep={db_sleep}&srv_sleep={srv_sleep}"
+    with_errors = f"{with_sleep}&is_db_error={is_db_error}&is_srv_error={is_srv_error}"
+    return with_errors
